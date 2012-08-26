@@ -4,3 +4,4 @@ Given /^"(.*?)" has created a ticket for this project:$/ do |email, table|
 	  @project.tickets.create!(attributes)
 	end
  end
+
