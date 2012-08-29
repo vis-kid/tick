@@ -6,9 +6,10 @@ Feature: Creating Tickets
   Background: 
     Given there is a project called "Internet Explorer"
     And there are the following users:
-      |email             | password |
-      |user@ticketee.com | password |
+      | email             | password |
+      | user@ticketee.com | password |
     And "user@ticketee.com" can view the "Internet Explorer" project
+    And "user@ticketee.com" can create tickets in the "Internet Explorer" project
     And I am signed in as them
     And I am on the homepage
     When I follow "Internet Explorer"
@@ -33,3 +34,34 @@ Feature: Creating Tickets
     And I press "Create Ticket"
     Then I should see "Ticket has not been created."
     And I should see "Description is too short"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
